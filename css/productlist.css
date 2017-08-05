@@ -1,0 +1,96 @@
+.productlist_nav {
+  padding: 4px;
+  height: 40px;
+}
+.productlist_nav > ul {
+  overflow: hidden;
+  margin: 0;
+  float: left;
+}
+.productlist_nav > ul > li {
+  float: left;
+  line-height: 30px;
+}
+.productlist_nav a {
+  float: right;
+}
+.productlist_nav a > input {
+  width: 60px;
+  height: 28px;
+  border-radius: 5px;
+  border: none;
+}
+/*��Ʒ�б�*/
+.productlist_list {
+  overflow: hidden;
+  background: #fff;
+}
+.productlist_list ul {
+  margin: 0;
+}
+.productlist_list ul > li {
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+.productlist_list ul > li > a {
+  float: left;
+}
+.productlist_list ul > li > a > img {
+  width: 100px;
+  height: 100px;
+}
+.productlist_list ul > li .introduce {
+  overflow: hidden;
+  padding-left: 10px;
+}
+.productlist_list ul > li .introduce > h4 {
+  font-size: 14px;
+  color: #666;
+}
+.productlist_list ul > li .introduce > .price {
+  color: red;
+}
+/*ҳ��*/
+.page {
+  height: 49px;
+  background: #fff;
+}
+.page > div {
+  float: left;
+  margin-top: 6px;
+  width: 33.33%;
+  padding: 0 10px;
+}
+.page > div.left a,
+.page > div.right a {
+  width: 100%;
+  float: left;
+  line-height: 35px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+.page > div.cen {
+  line-height: 36px;
+  text-align: center;
+  position: relative;
+}
+.page > div.cen > span {
+  display: block;
+  height: 36px;
+  border: 1px solid #ccc;
+}
+.page > div.cen > ul {
+  position: absolute;
+  top: 36px;
+  left: 0;
+  z-index: 99;
+  overflow: hidden;
+  display: none;
+  width: 100%;
+  padding: 0 10px;
+}
+.page > div.cen > ul > li {
+  border: 1px solid #666;
+  text-align: center;
+  background: #eee;
+}

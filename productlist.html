@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet/less" href="css/base.less"/>
+    <link rel="stylesheet/less" href="css/index.less"/>
+    <link rel="stylesheet/less" href="css/productlist.less"/>
+    <script src="js/less.js"></script>
+</head>
+<body>
+<!-- 头部-->
+<header class="header">
+    <a href="#" class="logo">
+        <img src="images/header_logo.png" alt=""/>
+    </a>
+    <a href="#" class="down">
+        <img src="images/header_app.png" alt=""/>
+    </a>
+</header>
+<!-- 搜索信息-->
+<section class="seach">
+    <form>
+        <input type="text" class="text" placeholder="请输入要比价的商品"/>
+        <input type="submit" class="btn" value="搜索"/>
+    </form>
+</section>
+<!-- 分类导航-->
+<div class="productlist_nav">
+    <ul>
+        <li><a href="index.html">首页></a></li>
+        <li><a href="category.html">全部分类></a></li>
+        <li>空调></li>
+    </ul>
+    <a href="#"><input type="button" value="筛选"/></a>
+</div>
+<div class="productlist_list">
+    <ul class="product_con_list">
+        <script type="text/html" id="product_con">
+            {{each result as value}}
+                <li>
+                    <a href="#">{{#value.productImg}}</a>
+                    <div class="introduce">
+                        <h4><a href="bijia.html?productid={{value.productId}}&categoryid={{value.categoryId}}">{{value.productName}}</a></h4>
+                        <p class="price">{{value.productPrice}}</p>
+                        <span>{{value.productQuote}}</span>
+                        <span>{{value.productCom}}</span>
+                    </div>
+                </li>
+            {{/each}}
+        </script>
+    </ul>
+</div>
+<div class="page">
+    <div class="left">
+        <a class="prev_btn">上一页</a>
+    </div>
+    <div class="cen">
+        <span></span>
+        <ul>
+            <!--<li>第1页</li>-->
+            <!--<li>第2页</li>-->
+            <!--<li>第3页</li>-->
+        </ul>
+    </div>
+    <div class="right">
+        <a class="next_btn">下一页</a>
+    </div>
+</div>
+<!-- 底部区域-->
+<footer class="footer">
+    <div class="fooer_nav">
+        <ul>
+            <li><a href="#">登录</a></li>
+            <li><a href="#">注册</a></li>
+            <li><a href="#">返回顶部</a></li>
+        </ul>
+    </div>
+    <div class="footer_text">
+        <a href="#">手机APP下载</a>
+        <a href="#">慢慢买手机版</a>
+        -- 掌上比价平台
+        <p>m.manmanbuy.comp</p>
+    </div>
+</footer>
+
+
+
+
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="js/template.js"></script>
+<script src="js/productlist.js"></script>
+</body>
+</html>

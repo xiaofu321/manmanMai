@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet/less" href="css/base.less"/>
+    <link rel="stylesheet/less" href="css/index.less"/>
+    <link rel="stylesheet/less" href="css/category.less"/>
+    <script src="js/less.js"></script>
+</head>
+<body>
+<!-- 头部-->
+<header class="header">
+    <a href="#" class="logo">
+        <img src="images/header_logo.png" alt=""/>
+    </a>
+    <a href="#" class="down">
+        <img src="images/header_app.png" alt=""/>
+    </a>
+</header>
+<!-- 搜索信息-->
+<section class="seach">
+    <form>
+        <input type="text" class="text" placeholder="请输入要比价的商品"/>
+        <input type="submit" class="btn" value="搜索"/>
+    </form>
+</section>
+<!-- 分类区域-->
+<section class="category">
+    <ul>
+        <script type="text/html" id="title">
+            {{each result as value}}
+                <li>
+                    <h3 id="{{value.titleId}}">{{value.title}}</h3>
+                    <ul></ul>
+                </li>
+            {{/each}}
+        </script>
+        <!--<li>-->
+            <!--<h3>大家电</h3>-->
+            <!--<ul>-->
+                <!--<li><a href="#">电视</a></li>-->
+                <!--<li><a href="#">电视</a></li>-->
+                <!--<li><a href="#">电视</a></li>-->
+                <!--<li><a href="#">电视</a></li>-->
+                <!--<li><a href="#">电视</a></li>-->
+                <!--<li><a href="#">电视</a></li>-->
+            <!--</ul>-->
+        <!--</li>-->
+        <!--<li>-->
+            <!--<h3>大家电</h3>-->
+            <!--<ul>-->
+                <!--<li><a href="#">电视</a></li>-->
+                <!--<li><a href="#">电视</a></li>-->
+                <!--<li><a href="#">电视</a></li>-->
+                <!--<li><a href="#">电视</a></li>-->
+                <!--<li><a href="#">电视</a></li>-->
+                <!--<li><a href="#">电视</a></li>-->
+            <!--</ul>-->
+        <!--</li>-->
+    </ul>
+</section>
+<!-- 底部区域-->
+<footer class="footer">
+    <div class="fooer_nav">
+        <ul>
+            <li><a href="#">登录</a></li>
+            <li><a href="#">注册</a></li>
+            <li><a href="#">返回顶部</a></li>
+        </ul>
+    </div>
+    <div class="footer_text">
+        <a href="#">手机APP下载</a>
+        <a href="#">慢慢买手机版</a>
+        -- 掌上比价平台
+        <p>m.manmanbuy.comp</p>
+    </div>
+</footer>
+
+    <script type="text/html" id="list_con">
+
+        {{each result as value}}
+        <!-- 将参数写到url中-->
+        <!-- 在地址栏中通过categoryid={{value.categoryId}}将每一项的id传入url地址中-->
+        <li><a href="productlist.html?categoryid={{value.categoryId}}">{{value.category}}</a></li>
+        {{/each}}
+    </script>
+
+
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="js/template.js"></script>
+<script src="js/category.js"></script>
+</body>
+</html>

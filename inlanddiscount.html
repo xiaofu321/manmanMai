@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet/less" href="css/base.less"/>
+    <link rel="stylesheet/less" href="css/index.less"/>
+    <link rel="stylesheet/less" href="css/productlist.less"/>
+    <link rel="stylesheet/less" href="css/moneyctrl.less"/>
+    <link rel="stylesheet/less" href="css/moneyproduct.less"/>
+    <link rel="stylesheet/less" href="css/inlanddiscount.less"/>
+    <script src="js/less.js"></script>
+</head>
+<body>
+<!-- 头部-->
+<header class="strl_header">
+    <a href="#" class="before"></a>
+    <h3>国内折扣</h3>
+    <a href="#" class="after"></a>
+</header>
+<!-- 列表-->
+<div class="inland_product">
+    <ul>
+        <script type="text/html" id="inland_list">
+            {{each result as value}}
+                <li>
+                    <a href="#">{{#value.productImg}}</a>
+                    <a href="discount.html?productid={{value.productId}}"><h3>{{value.productName}}</h3></a>
+                    <p class="price">18.9</p>
+                    <p class="form">{{value.productFrom}}|{{value.productTime}}</p>
+                </li>
+            {{/each}}
+        </script>
+    </ul>
+</div>
+<!-- 底部区域-->
+<footer class="footer">
+    <div class="fooer_nav">
+        <ul>
+            <li><a href="#">登录</a></li>
+            <li><a href="#">注册</a></li>
+            <li><a href="#">返回顶部</a></li>
+        </ul>
+    </div>
+    <div class="footer_text">
+        <a href="#">手机APP下载</a>
+        <a href="#">慢慢买手机版</a>
+        -- 掌上比价平台
+        <p>m.manmanbuy.comp</p>
+    </div>
+</footer>
+<!--loading效果-->
+<div class="spinner">
+    <div class="spinner-container container1">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <div class="circle4"></div>
+    </div>
+    <div class="spinner-container container2">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <div class="circle4"></div>
+    </div>
+    <div class="spinner-container container3">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <div class="circle4"></div>
+    </div>
+</div>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="js/template.js"></script>
+<script src="js/inlanddiscount.js"></script>
+</body>
+</html>

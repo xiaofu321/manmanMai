@@ -1,0 +1,202 @@
+body {
+  background: #f5f5f5;
+}
+/*ͷ��*/
+.header {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  background: #ff841d;
+}
+.header > .logo img {
+  height: 25px;
+}
+.header > .down img {
+  width: 34px;
+  float: right;
+  margin-top: -2px;
+}
+/*��������*/
+.seach {
+  padding: 10px;
+  background: #fff;
+}
+.seach form {
+  width: 100%;
+  position: relative;
+  padding-right: 70px;
+}
+.seach form .text {
+  width: 100%;
+  height: 30px;
+  border-radius: 15px;
+  background: #f5f5f5;
+  padding-left: 15px;
+  border: none;
+}
+.seach form > .btn {
+  width: 63px;
+  height: 30px;
+  background: #ff841d;
+  border-radius: 15px;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  color: #fff;
+  padding: 0;
+}
+/*��Ʒ����*/
+.menu {
+  padding: 10px;
+  margin-top: 10px;
+  background: #fff;
+  overflow: hidden;
+}
+.menu li {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+.menu li:nth-last-child(-n+4) {
+  display: none;
+}
+.menu li a > img {
+  width: 50px;
+}
+.menu li a > p {
+  font-size: 12px;
+  line-height: 30px;
+  margin: 0;
+}
+/*��Ʒ�Ƽ�*/
+.store {
+  margin-top: 10px;
+  overflow: hidden;
+  background: #fff;
+}
+.store .recommen-title {
+  width: 100%;
+  height: 35px;
+  background: #ff9000;
+  padding-left: 20px;
+}
+.store .recommen-title h3 {
+  font-size: 16px;
+  line-height: 35px;
+  color: #fff;
+  float: left;
+  margin: 0;
+}
+.store .recommen-title a > img {
+  float: right;
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+}
+.store .recommen-list li {
+  width: 100%;
+  padding: 25px 10px 10px;
+  border-bottom: 1px solid #ccc;
+  overflow: hidden;
+}
+.store .recommen-list li a {
+  float: left;
+}
+.store .recommen-list li a img {
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+.store .recommen-list li .con {
+  overflow: hidden;
+}
+.store .recommen-list li .con h4 {
+  font-size: 14px;
+}
+.store .recommen-list li .con .pic {
+  color: #e92322;
+}
+.store .recommen-list li .con .jd_store {
+  font-size: 12px;
+  float: left;
+}
+.store .recommen-list li .con span {
+  float: right;
+  margin-right: 10px;
+  font-size: 12px;
+}
+.store .recommen-list li .con span .icon-comment {
+  width: 16px;
+  height: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 4px;
+  background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024' width='17'><path fill='#a1a1a1' d='M924.504962 664.898711 97.819886 664.898711c-17.557888 0-31.795147-14.241352-31.795147-31.795147l0-508.732583c0-17.557888 14.238282-31.792077 31.795147-31.792077l241.198387 0 149.664671-149.661601c6.209422-6.212492 14.34266-9.31618 22.478967-9.31618s16.269545 3.102664 22.479991 9.31618L683.306574 92.57788l241.198387 0c17.557888 0 31.795147 14.235213 31.795147 31.792077L956.300109 633.10254C956.300109 650.657358 942.061826 664.898711 924.504962 664.898711zM892.708791 156.169197l-222.569098 0c-8.428973 0-16.518209-3.354398-22.478967-9.31618l-136.498814-136.494721-136.498814 136.494721c-5.961782 5.961782-14.051017 9.31618-22.479991 9.31618l-222.569098 0L129.61401 601.304324l763.093758 0L892.707768 156.169197zM288.592814 378.735226m-63.591317 0a62.143 62.143 0 1 0 127.182634 0 62.143 62.143 0 1 0-127.182634 0ZM511.161912 378.735226m-63.591317 0a62.143 62.143 0 1 0 127.182634 0 62.143 62.143 0 1 0-127.182634 0ZM733.73101 378.735226m-63.591317 0a62.143 62.143 0 1 0 127.182634 0 62.143 62.143 0 1 0-127.182634 0Z' transform='translate(0, 812) scale(1, -1)'/></svg>");
+}
+.store .store_more {
+  padding: 10px;
+  text-align: center;
+}
+.store .store_more > a {
+  display: block;
+  border: 1px solid #ccc;
+  line-height: 32px;
+  text-align: center;
+  border-radius: 5px;
+}
+/*Ʒ������*/
+.brand {
+  overflow: hidden;
+}
+.brand .title {
+  height: 35px;
+  padding: 0 10px;
+  line-height: 35px;
+  background: #ff9000;
+}
+.brand .title h3 {
+  font-size: 16px;
+  margin: 0;
+  line-height: 35px;
+  color: #fff;
+  float: left;
+}
+.brand .title a {
+  float: right;
+}
+.brand .title a img {
+  width: 20px;
+  height: 20px;
+}
+/*�ײ�*/
+.footer {
+  overflow: hidden;
+}
+.footer .fooer_nav {
+  overflow: hidden;
+}
+.footer .fooer_nav li {
+  width: 33.333%;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border-top: 1px solid #ccc ;
+  border-bottom: 1px solid #ccc ;
+  float: left;
+}
+.footer .fooer_nav li:nth-child(2) {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+.footer .footer_text {
+  overflow: hidden;
+  text-align: center;
+  font-size: 12px;
+}
+.footer .footer_text a {
+  line-height: 30px;
+  font-size: 12px;
+}
+.footer .footer_text a:nth-child(1) {
+  color: red;
+}

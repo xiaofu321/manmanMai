@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet/less" href="css/base.less"/>
+    <link rel="stylesheet/less" href="css/index.less"/>
+    <link rel="stylesheet/less" href="css/productlist.less"/>
+    <link rel="stylesheet/less" href="css/moneyctrl.less"/>
+    <link rel="stylesheet/less" href="css/gsproduct.less"/>
+    <script src="js/less.js"></script>
+</head>
+<body>
+<!-- 头部-->
+<header class="strl_header">
+    <a href="#" class="before"></a>
+    <h3>凑单品</h3>
+    <a href="#" class="after"></a>
+</header>
+<!-- 优惠券详情-->
+<div class="gsproduct">
+    <div class="gsproduct_nav">
+
+        <ul class="tit">
+           <li class="jd" shopid="0">京东</li>
+           <li class="north" areaid="0">华北</li>
+           <li>全部价格</li>
+        </ul>
+        <ul class="tir_list">
+            <script type="text/html" id="jd_list">
+                {{each result as value}}
+                    <li shopid="{{value.shopId}}">{{value.shopName}}</li>
+                {{/each}}
+            </script>
+        </ul>
+        <ul class="north_list">
+            <script type="text/html" id="list_con">
+                {{each result as value}}
+                <li areaid="{{value.areaId}}">{{value.areaName}}</li>
+                {{/each}}
+            </script>
+        </ul>
+    </div>
+</div>
+<div class="con">
+    <ul>
+        <script type="text/html" id="con_list">
+            {{each result as value}}
+                <li>
+                    <img src="{{value.productImg}}" alt=""/>
+                    <p>{{value.productName}}</p>
+                    <span class="pice">{{value.productPrice}}</span>
+                    <span class="btn">去凑单</span>
+                </li>
+            {{/each}}
+        </script>
+    </ul>
+</div>
+<!-- 底部区域-->
+<footer class="footer">
+    <div class="fooer_nav">
+        <ul>
+            <li><a href="#">登录</a></li>
+            <li><a href="#">注册</a></li>
+            <li><a href="#">返回顶部</a></li>
+        </ul>
+    </div>
+    <div class="footer_text">
+        <a href="#">手机APP下载</a>
+        <a href="#">慢慢买手机版</a>
+        -- 掌上比价平台
+        <p>m.manmanbuy.comp</p>
+    </div>
+</footer>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="js/template.js"></script>
+<script src="js/gsproduct.js"></script>
+</body>
+</html>

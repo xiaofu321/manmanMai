@@ -1,0 +1,29 @@
+.couponproduct_list {
+  overflow: hidden;
+  background: #fff;
+}
+.couponproduct_list li {
+  padding: 10px;
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+}
+.couponproduct_list li a {
+  float: left;
+}
+.couponproduct_list li a img {
+  width: 100px;
+  height: 80px;
+}
+.couponproduct_list li .fr {
+  overflow: hidden;
+}
+.couponproduct_list li .fr h3 {
+  font-size: 14px;
+  margin: 0;
+}
+.couponproduct_list li .fr .pice {
+  font-weight: bold;
+}
+.couponproduct_list li .fr .day {
+  color: #ee7700;
+}

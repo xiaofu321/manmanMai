@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet/less" href="css/base.less"/>
+    <link rel="stylesheet/less" href="css/index.less"/>
+    <link rel="stylesheet/less" href="css/productlist.less"/>
+    <link rel="stylesheet/less" href="css/moneyctrl.less"/>
+    <link rel="stylesheet/less" href="css/baicaijia.less"/>
+    <script src="js/less.js"></script>
+</head>
+<body>
+<!-- 头部-->
+<header class="strl_header">
+    <a href="#" class="before"></a>
+    <h3>
+        白菜价-淘宝内部券
+    </h3>
+    <a href="#" class="after"></a>
+</header>
+<!-- 列表-->
+<div class="baicaijia_nav">
+    <div class="nav">
+        <ul>
+            <script type="text/html" id="nav_baicai">
+            {{each result as value}}
+                <li id="{{value.titleId}}"><a href="javascript:;">{{value.title}}</a></li>
+            <!--<li id=""><a href="baicaijia.html?titleid={{value.titleId}}">{{value.title}}</a></li>-->
+
+            {{/each}}
+            </script>
+
+        </ul>
+    </div>
+    <div class="seach"></div>
+</div>
+<div class="baocaijia_con">
+    <ul>
+        <script type="text/html" id="baicaijia_list">
+            {{each result as value}}
+                <li>
+                    <a href="#">{{#value.productImg}}</a>
+                    <div class="fr">
+                        <h3>{{#value.productName}}</h3>
+                        <p class="pice">{{#value.productPrice}}</p>
+                        <div class="bar">
+                           {{#value.productCouponRemain}}
+                        </div>
+                        <div class="favorable">
+                            {{#value.productCoupon}}
+                            <span class="down">下单链接</span>
+                        </div>
+                    </div>
+                </li>
+            {{/each}}
+        </script>
+    </ul>
+</div>
+<!-- 底部区域-->
+<footer class="footer">
+    <div class="fooer_nav">
+        <ul>
+            <li><a href="#">登录</a></li>
+            <li><a href="#">注册</a></li>
+            <li><a href="#">返回顶部</a></li>
+        </ul>
+    </div>
+    <div class="footer_text">
+        <a href="#">手机APP下载</a>
+        <a href="#">慢慢买手机版</a>
+        -- 掌上比价平台
+        <p>m.manmanbuy.comp</p>
+    </div>
+</footer>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="js/template.js"></script>
+<script src="js/baicaijia.js"></script>
+</body>
+</html>

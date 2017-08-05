@@ -1,0 +1,83 @@
+.gsproduct .gsproduct_nav {
+  height: 38px;
+  line-height: 38px;
+  background: #fff;
+  position: relative;
+}
+.gsproduct .gsproduct_nav .tit {
+  height: 38px;
+}
+.gsproduct .gsproduct_nav .tit > li {
+  float: left;
+  font-size: 14px;
+  padding: 0 20px;
+  line-height: 38px;
+  text-align: center;
+}
+.gsproduct .gsproduct_nav .tir_list {
+  width: 100%;
+  position: absolute;
+  top: 38px;
+  left: 0;
+  z-index: 99;
+  display: none;
+}
+.gsproduct .gsproduct_nav .tir_list li {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  border-top: 1px solid #ccc;
+  background: #fff;
+  padding-left: 10px;
+}
+.gsproduct .gsproduct_nav .north_list {
+  width: 100%;
+  position: absolute;
+  top: 38px;
+  left: 0;
+  z-index: 99;
+  display: none;
+}
+.gsproduct .gsproduct_nav .north_list li {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  border-top: 1px solid #ccc;
+  background: #fff;
+  padding-left: 10px;
+}
+.con {
+  overflow: hidden;
+  margin-top: 10px;
+}
+.con li {
+  width: 48%;
+  float: left;
+  background: #fff;
+  margin-left: 5px;
+  margin-top: 10px;
+  text-align: center;
+  padding: 4px;
+}
+.con li > img {
+  width: 100px;
+}
+.con li p {
+  font-size: 14px;
+  text-align: left;
+}
+.con li .pice {
+  float: left;
+  color: #ff841d;
+}
+.con li .btn {
+  width: 50px;
+  height: 28px;
+  background: #ff841d;
+  color: #fff;
+  text-align: center;
+  line-height: 28px;
+  float: right;
+  border-radius: 5px;
+  font-size: 12px;
+}

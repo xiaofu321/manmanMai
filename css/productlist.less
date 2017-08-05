@@ -1,0 +1,98 @@
+.productlist_nav{
+  padding:4px;
+  height: 40px;
+
+  >ul{
+    overflow: hidden;
+    margin:0;
+    float: left;
+    >li{
+      float: left;
+      line-height: 30px;
+    }
+  }
+  a{
+    float: right;
+    >input{
+      width: 60px;
+      height: 28px;
+      border-radius: 5px;
+      border:none;
+    }
+  }
+}
+/*商品列表*/
+.productlist_list{
+  overflow: hidden;
+  background: #fff;
+  ul{
+    margin:0;
+    >li{
+      padding:20px;
+      border-bottom: 1px solid #ccc;
+      >a{
+        float: left;
+        >img{
+          width: 100px;
+          height: 100px;
+        }
+      }
+      .introduce{
+        overflow: hidden;
+        padding-left:10px;
+        >h4{
+          font-size: 14px;
+          color:#666;
+        }
+        >.price{
+          color:red;
+        }
+      }
+    }
+  }
+}
+/*页码*/
+.page{
+    height: 49px;
+    background: #fff;
+  >div{
+    float: left;
+    margin-top:6px;
+    width: 33.33%;
+    padding:0 10px;
+    &.left a,&.right a{
+      text-align: center;
+      width: 100%;
+      float: left;
+      line-height: 35px;
+      text-align: center;
+      border:1px solid #ccc;
+    }
+    &.cen{
+      line-height: 36px;
+      text-align: center;
+      position: relative;
+      >span{
+        display: block;
+        height: 36px;
+        border:1px solid #ccc;
+      }
+      >ul{
+        position: absolute;
+        top:36px;
+        left:0;
+        z-index: 99;
+        overflow: hidden;
+        display: none;
+        width: 100%;
+        padding:0 10px;
+        >li{
+          border:1px solid #666;
+          text-align: center;
+          background:#eee;
+        }
+
+      }
+    }
+  }
+}
